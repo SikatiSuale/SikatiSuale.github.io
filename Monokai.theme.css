@@ -73,7 +73,6 @@
 }
 
 
-
 /*
  *
  *	GLOBAL ELEMENTS
@@ -1253,24 +1252,19 @@ body,
 	display: none;
 }
 
-.OTB-minButton:hover,
-.OTB-maxButton:hover {
-	background-color: var(--hover-color);
+.toolbar-1t6TWx .iconWrapper-2OrFZ1.clickable-3rdHwn.cursorPointer-1tw4YS:hover {
+	background-color: var(--menu-item-hover);
 }
 
-.OTB-closeButton:hover {
-	background: var(--alert-color);
+.toolbar-1t6TWx .iconWrapper-2OrFZ1.clickable-3rdHwn.cursorPointer-1tw4YS + .iconWrapper-2OrFZ1 + .iconWrapper-2OrFZ1:hover {
+	background-color: var(--alert-color);
 }
 
-.OTB-minButton path,
-.OTB-maxButton path,
-.OTB-closeButton path {
+.toolbar-1t6TWx .iconWrapper-2OrFZ1.clickable-3rdHwn.cursorPointer-1tw4YS path {
 	stroke-width: 2 !important;
 }
 
-.toolbar-1t6TWx .divider-3FBTu8 + .iconWrapper-2OrFZ1:after,
-.toolbar-1t6TWx .divider-3FBTu8 + .iconWrapper-2OrFZ1 + .iconWrapper-2OrFZ1:after,
-.toolbar-1t6TWx .divider-3FBTu8 + .iconWrapper-2OrFZ1 + .iconWrapper-2OrFZ1 + .iconWrapper-2OrFZ1:after,
+.toolbar-1t6TWx .iconWrapper-2OrFZ1.clickable-3rdHwn.cursorPointer-1tw4YS:after,
 
 .standardSidebarView-3F1I7i .toolbar-1t6TWx .iconWrapper-2OrFZ1:after {
 	display: none;
@@ -2011,8 +2005,13 @@ body,
 	margin: 0 0 0 64px;
 }
 
+.modal-yWgWj- .message-2qRu38 .disableInteraction-286MMw.cozy-3raOZG:before {
+
+}
+
 .modal-yWgWj- .message-2qRu38 .disableInteraction-286MMw.cozy-3raOZG .avatar-1BDn8e {
-	top: -8px;
+	top: 0;
+	left: -63px;
 	margin: 0;
 }
 
@@ -3405,7 +3404,6 @@ button[disabled],
 .checkbox-1ix_J3:after,
 .overlay-toggle-icon:after,
 .button-mM-y8i:after,
-.bf-toolbar .format:after,
 .arrowContainer-10m4Cy:after,
 .arrowHitbox-2_hxtQ:after,
 .channelNotices-41mJbj .channelNotice-1-XFjC .close-relY5R:after,
@@ -3463,7 +3461,6 @@ button[disabled],
 .iconButtonDefault-2cKx7-:not(.unavailable):hover:after,
 .overlay-toggle-icon:hover:after,
 .button-mM-y8i:hover:after,
-.bf-toolbar .format:hover:after,
 .channelNotices-41mJbj .channelNotice-1-XFjC .close-relY5R:hover:after,
 .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9:hover:after,
 .operations-36ENbA .anchor-3Z-8Bb:hover:after,
@@ -3499,7 +3496,6 @@ button[disabled],
 .iconButtonDefault-2cKx7-:not(.unavailable):active:after,
 .overlay-toggle-icon:active:after,
 .button-mM-y8i:active:after,
-.bf-toolbar .format:active:after,
 .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9:active:after,
 .operations-36ENbA .anchor-3Z-8Bb:active:after,
 .addButton-1BORro:active:after,
@@ -3616,12 +3612,6 @@ button[disabled],
 .overlay-toggle-icon:after,
 .overlay-toggle-icon:hover:after {
 	transform: scale(1.3332);
-}
-
-.bf-toolbar .format:after,
-.bf-toolbar .format:hover:after {
-	left: 3px;
-	transform: scale(1.2);
 }
 
 .arrowContainer-10m4Cy:after,
@@ -4420,7 +4410,8 @@ button[disabled],
 }
 
 .peopleListItem-2nzedh,
-.peopleListItem-2nzedh:hover {
+.peopleListItem-2nzedh:hover,
+.peopleListItem-2nzedh.active-rhSpJJ {
 	margin: 0;
 	padding: 16px;
 	border-radius: 0;
@@ -4432,6 +4423,9 @@ button[disabled],
 
 .peopleListItem-2nzedh,
 .peopleListItem-2nzedh:hover,
+.peopleListItem-2nzedh:hover + .peopleListItem-2nzedh,
+.peopleListItem-2nzedh.active-rhSpJJ,
+.peopleListItem-2nzedh.active-rhSpJJ + .peopleListItem-2nzedh,
 .peopleListItem-2nzedh:hover + .peopleListItem-2nzedh {
 	border-color: var(--select-color)
 }
@@ -4472,7 +4466,11 @@ button[disabled],
 }
 
 .itemCard-v9viV7:hover {
-	background-color: #292b2f;
+	background-color: #292b2f !important;
+}
+
+.itemCard-v9viV7.active-1xchHY {
+	background-color: #35373a !important
 }
 
 .itemCard-v9viV7:first-of-type {
@@ -4492,6 +4490,7 @@ button[disabled],
 	background-color: var(--hover-color) !important;
 }
 
+.popout-38lTFE,
 .popout-13LQ_3 {
 	left: -184px;
 	padding: 8px 0;
@@ -4502,17 +4501,18 @@ button[disabled],
 .wrapper-3Rixsz,
 .memberListItem-2ZX2pl {
 	margin: 0;
-	padding: 8px 12px;
+	padding: 9px 12px;
 	border-radius: 0;
 	transition: 250ms ease all;
 }
 
 .memberListItem-2ZX2pl {
-	padding: 5px 12px;
+	padding: 6px 12px;
 }
 
 .memberListItem-31QoHj {
 	margin: 8px 0;
+	padding: 6px 8px;
 	border-radius: 0;
 }
 
@@ -8480,9 +8480,21 @@ input:checked+.slider-3Z3pGX,
 
 .markup-2BOw-j .mention {
 	padding: 0 2px;
-	background: var(--accent-rgb) !important;
+	background-color: var(--accent-rgb) !important;
 	border-radius: var(--border-radius);
 	font-weight: 700;
+}
+
+.cozy-3raOZG .messageContent-2qWWxC.markup-2BOw-j {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.mentioned-xhSam7 .markup-2BOw-j:not(.embed-IeVjo6) {
+	margin-left: -2px;
+	padding-left: 2px;
+	background-color: var(--accent-rgb) !important;
+	border-radius: var(--border-radius);
 }
 
 .isMentioned-N-h9aa .mention {
@@ -8545,28 +8557,30 @@ input:checked+.slider-3Z3pGX,
 
 /* MAIN CHAT AREA AND MESSAGES -> COZY */
 
+.message-2qnXI6.groupStart-23k01U,
+.message-2qnXI6:not(.groupStart-23k01U),
+.message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z {
+	background-color: var(--message-color);
+	border-bottom: none !important;
+	overflow: visible !important;
+}
+
 .message-2qnXI6.groupStart-23k01U {
 	position: relative;
 	margin: 16px 26px 0 80px;
 	padding: 8px;
 	/*padding: 12px 8px 0;*/
-	background-color: var(--message-color);
 	border-radius: var(--border-radius);
-	border-bottom: none !important;
-	overflow: visible !important;
 }
 
 .message-2qnXI6:not(.groupStart-23k01U) {
 	margin: 0 26px 0 80px;
 	padding: 0 8px 8px 8px;
 	/*padding: 0 8px;*/
-	background: var(--message-color);
 	border-radius: 0 0 var(--border-radius) var(--border-radius);
-	border-bottom: none !important;
-	overflow: visible !important;
 }
 
-.message-2qnXI6:not(.groupStart-23k01U):before {
+.message-2qnXI6:not(.groupStart-23k01U):after {
 	position: absolute;
 	content: " ";
 	width: 100%;
@@ -8582,6 +8596,12 @@ input:checked+.slider-3Z3pGX,
 	background-color: var(--accent-color);
 	border-radius: 0 0 0 var(--border-radius);
 }
+
+.mentioned-xhSam7:before {
+	display: none;
+}
+
+.searchResult-3pzFAB .cozy-3raOZG:not(.message-2qnXI6) .container-3FojY8:before,
 
 .message-2qnXI6.groupStart-23k01U .container-3FojY8:before,
 .messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT .container-3FojY8:before,
@@ -8600,9 +8620,11 @@ input:checked+.slider-3Z3pGX,
 	transform: rotate(135deg);
 }
 
-.message-2qnXI6.groupStart-23k01U.mentioned-xhSam7 .container-3FojY8:before {
+/*.message-2qnXI6.groupStart-23k01U.mentioned-xhSam7 .container-3FojY8:before {
 	border-right-color: var(--accent-color);
-}
+}*/
+
+.searchResult-3pzFAB .cozy-3raOZG:not(.message-2qnXI6) .container-3FojY8:after,
 
 .message-2qnXI6.groupStart-23k01U .container-3FojY8:after,
 .messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT .container-3FojY8:after,
@@ -8617,9 +8639,9 @@ input:checked+.slider-3Z3pGX,
 	pointer-events: none;
 }
 
-.message-2qnXI6.groupStart-23k01U.mentioned-xhSam7 .container-3FojY8:after {
+/*.message-2qnXI6.groupStart-23k01U.mentioned-xhSam7 .container-3FojY8:after {
 	background-color: var(--accent-color);
-}
+}*/
 
 .message-2qnXI6.groupStart-23k01U.systemMessage-1I9LCe .container-3FojY8:before,
 .message-2qnXI6.groupStart-23k01U.systemMessage-1I9LCe .container-3FojY8:after,
@@ -8637,6 +8659,21 @@ input:checked+.slider-3Z3pGX,
 	overflow: visible;
 }
 
+.a11y-font-scaled-down .cozy-3raOZG .container-3FojY8,
+.a11y-font-scaled-down .cozy-3raOZG .header-23xsNx {
+	padding-left: 1px;
+}
+
+.a11y-font-scaled-down .cozy-3raOZG .header-23xsNx {
+	margin-left: -72px;
+	padding-left: 72px;
+}
+
+.a11y-font-scaled-down .message-2qnXI6.groupStart-23k01U .avatar-1BDn8e {
+	width: 40px;
+	height: 40px;
+}
+
 .cozy-3raOZG:not(.message-2qnXI6) {
 	margin: 16px 26px 0 80px;
 	padding: 8px;
@@ -8648,9 +8685,14 @@ input:checked+.slider-3Z3pGX,
 	margin-bottom: 8px;
 }
 
+.avatar-1BDn8e {
+	top: 0;
+	left: -50px;
+}
+
 .message-2qnXI6.groupStart-23k01U .avatar-1BDn8e {
-	top: -8px;
-	left: -12px;
+	top: 0;
+	left: -63px;
 }
 
 .message-2qnXI6.groupStart-23k01U .avatar-1BDn8e:hover {
@@ -8661,14 +8703,16 @@ input:checked+.slider-3Z3pGX,
 	transform: translateY(0);
 }
 
-.container-3FojY8 .timestampVisibleOnHover-2bQeI4 {
+.container-3FojY8 .timestampVisibleOnHover-2bQeI4,
+.cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
 	opacity: 0;
 	left: -72px;
 	font-weight: 600;
 	transition: 250ms ease opacity 0ms;
 }
 
-.container-3FojY8:hover .timestampVisibleOnHover-2bQeI4 {
+.container-3FojY8:hover .timestampVisibleOnHover-2bQeI4,
+.cozy-3raOZG.wrapper-2a6GCs:hover .timestamp-3ZCmNB.alt-1uNpEt {
 	opacity: 1;
 	transition: 250ms ease opacity 750ms;
 }
@@ -8830,13 +8874,14 @@ input:checked+.slider-3Z3pGX,
 	position: relative;
 }
 
-.headerCozy-2N9HOL:first-child:before {
+.message-2qnXI6.groupStart-23k01U .contents-2mQqc9:before,
+.messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT .contents-2mQqc9:before {
 	content: " ";
 	position: absolute;
 	width: 0;
 	height: 0;
-	top: -12px;
-	left: -14px;
+	top: 0;
+	left: -6px;
 	margin: -6px 0 0 0;
 	border: 6px solid transparent;
 	border-color: transparent;
@@ -8845,13 +8890,14 @@ input:checked+.slider-3Z3pGX,
 	transform: rotate(135deg);
 }
 
-.headerCozy-2N9HOL:first-child:after {
+.message-2qnXI6.groupStart-23k01U .contents-2mQqc9:after,
+.messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT .contents-2mQqc9:after {
 	content: " ";
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	top: -12px;
-	left: -8px;
+	top: 0;
+	left: 0;
 	background: var(--message-color);
 	pointer-events: none;
 }
@@ -9198,7 +9244,7 @@ input:checked+.slider-3Z3pGX,
 	margin-top: 0;
 }
 
-.edited-DL9ECl {
+.edited-3sfAzf {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
@@ -9706,6 +9752,7 @@ input:checked+.slider-3Z3pGX,
 	border-radius: 50%;
 	left: auto;
 	bottom: 20px;
+	padding: 0;
 	background: var(--accent-color) !important;
 }
 
@@ -11670,7 +11717,7 @@ body:active .userPopout-3XzG_A:not(:active) {
 }
 
 .activity-1ythUs + .tabBarContainer-1s1u-z {
-	margin-top: -8px;
+	/*margin-top: -8px;*/
 }
 
 .tabBarContainer-1s1u-z {
@@ -12722,8 +12769,10 @@ body:active .popout-3sVMXz.popoutBottomRight-2JrySt:not(:active) {
 	box-shadow: var(--shadow-3dp);
 }
 
-.memberListHeader-3PX9UB {
+.memberListHeader-3PX9UB,
+.memberListHeader-543n-J {
 	padding: 0 12px;
+	text-transform: none;
 }
 
 .bottomControls-UTyHwG .justifyCenter-3D2jYp {
@@ -12796,7 +12845,7 @@ body:active .popout-3sVMXz.popoutBottomRight-2JrySt:not(:active) {
 /* GO LIVE -> PREVIEW */
 
 .streamPreview-2-WUWT {
-	background: var(--popout-alt) !important;
+	background: #19181A !important;
 	border-radius: var(--border-radius-big);
 	box-shadow: var(--shadow-3dp);
 }
@@ -12836,7 +12885,7 @@ body:active .popout-3sVMXz.popoutBottomRight-2JrySt:not(:active) {
 	min-height: 68px;
 	margin: 0;
 	padding: 0;
-	background-color: #111114 !important;
+	background-color: #111114!important;
 	border-radius: 0 !important;
 	box-shadow: none !important;
 	animation: show-status 250ms var(--default-animation);
@@ -13195,11 +13244,11 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	border-top-left-radius: 0 !important;
 }
 
-.messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT .container-3FojY8:before {
+.messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT .contents-2mQqc9:before {
 	border-right-color: var(--message-alt);
 }
 
-.messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT .container-3FojY8:after {
+.messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT .contents-2mQqc9:after {
 	background-color: var(--message-alt);
 }
 
@@ -13207,36 +13256,10 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	overflow: hidden;
 }
 
-/*.messageGroupWrapper-o-Zw7G .headerCozy-2N9HOL:first-child:before {
-	top: -12px;
-	left: -18px;
-	border-right-color: var(--message-alt);
+.messageGroupWrapper-o-Zw7G .cozy-3raOZG .header-23xsNx {
+	padding-left: 62px;
+	margin-left: -62px;
 }
-
-.messageGroupWrapper-o-Zw7G .headerCozy-2N9HOL:first-child:after {
-	background: var(--message-alt);
-}
-
-.messageGroupWrapper-o-Zw7G .markup-2BOw-j pre code {
-	background: rgba(0,0,0,0.25) !important;
-}
-
-.messageGroupWrapper-o-Zw7G .embed-IeVjo6 {
-	background: transparent !important;
-}
-
-.messageGroupWrapper-o-Zw7G .embedInner-1-fpTo {
-	background: rgba(0,0,0,0.25) !important;
-}
-
-.messagesPopout-24nkyi {
-	border-radius: 0 0 var(--border-radius-big) var(--border-radius-big);
-}
-
-.messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group .message:before {
-	display: none !important;
-	opacity: 0 !important;
-}*/
 
 .messageGroupWrapper-o-Zw7G .actionButtons-1sUUug {
 	margin: 0;
@@ -13472,6 +13495,8 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	background: var(--main-color) !important;
 }
 
+/* SEARCH -> RESULTS -> HEADER */
+
 .searchHeader-1l-wpR {
 	position: relative;
 	box-shadow: none !important;
@@ -13507,13 +13532,18 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	color: #fff !important;
 }
 
+/* SEARCH -> RESULTS -> MESSAGES */
+
 .searchResult-3pzFAB {
 	margin: 0 0 12px 0;
 }
 
-.searchResult-3pzFAB:before,
+.searchResult-3pzFAB:before {
+	background-image: linear-gradient(0deg,transparent,var(--main-color));
+}
+
 .searchResult-3pzFAB:after {
-	background: transparent !important;
+	background-image: linear-gradient(180deg,transparent,var(--main-color));
 }
 
 .searchResult-3pzFAB.expanded-v2Szsz .searchResultMessage-2VxO12 {
@@ -13540,7 +13570,33 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	border: none !important;
 }
 
-.search-results-wrap .search-result .search-result-message {
+.searchResult-3pzFAB.expanded-v2Szsz {
+	background-color: transparent;
+}
+
+.searchResult-3pzFAB .cozy-3raOZG:not(.message-2qnXI6) {
+	margin: 16px 16px 0 64px;
+}
+
+.searchResult-3pzFAB .hit-NLlWXA .cozy-3raOZG:not(.message-2qnXI6) .container-3FojY8:before,
+.searchResult-3pzFAB .hit-NLlWXA .cozy-3raOZG:not(.message-2qnXI6) .container-3FojY8:after {
+	top: -12px;
+}
+
+.searchResult-3pzFAB .cozy-3raOZG .header-23xsNx .avatar-1BDn8e {
+	top: -8px;
+	left: -12px;
+}
+
+.searchResult-3pzFAB .hit-NLlWXA .cozy-3raOZG .header-23xsNx .avatar-1BDn8e {
+	top: -12px;
+}
+
+.searchResult-3pzFAB .container-1ov-mD {
+	overflow: hidden;
+}
+
+/*.search-results-wrap .search-result .search-result-message {
 	border-radius: 3px !important;
 	background: transparent !important;
 	border: none !important;
@@ -13548,7 +13604,7 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 
 .search-results-wrap .search-result .search-result-message .message-group {
 	margin: 0 !important;
-}
+}*/
 
 .searchResultMessage-2VxO12.hit-NLlWXA .actionButtons-14P9IC {
 	top: 14px;
@@ -14235,6 +14291,11 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	background: var(--card-color) !important;
 }
 
+.repo-modal .bda-slist li:not(.pluginEntry):not(.themeEntry) {
+	margin: 0 0 16px 0 !important;
+	background: var(--card-alt) !important;
+}
+
 .bda-slist li:last-child {
 	margin: 0 0 16px 0 !important;
 }
@@ -14300,6 +14361,16 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 .pluginrepo-modal .standardSidebarView-3F1I7i,
 .themerepo-modal .standardSidebarView-3F1I7i {
 	background: var(--popout-color) !important;
+}
+
+.repo-modal .header-2tA9Os {
+	border-bottom: none !important;
+}
+
+.theme-dark .modal-6GHvdM .tabBarContainer-1s1u-z {
+	background: var(--popout-color) !important;
+	border-bottom: 1px solid var(--card-border-color) !important;
+	box-shadow: none !important;
 }
 
 .pluginrepo-modal .content-2BXhLs,
@@ -15100,13 +15171,13 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 }
 
 .bf-toolbar .format {
-	width: 27px;
-	margin: 0 4px;
+	min-width: 27px;
+	border-radius: var(--border-radius);
 	text-align: center;
 }
 
 .bf-toolbar .format:hover {
-	background: transparent !important;
+	background: var(--menu-item-hover) !important;
 }
 
 /* SUPPORTED PLUGINS -> ImageGallary */
@@ -15170,41 +15241,7 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 
 /* FONTS -> PRODUCT SANS */
 
-/* cyrillic */
-@font-face {
-	font-family: 'Product Sans';
-	font-style: italic;
-	font-weight: 500;
-	src: local('Product Sans Medium Italic'), local('ProductSans-MediumItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-MediumItalic-cyrillic.woff2) format('woff2');
-	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin */
-@font-face {
-	font-family: 'Product Sans';
-	font-style: italic;
-	font-weight: 500;
-	src: local('Product Sans Medium Italic'), local('ProductSans-MediumItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-MediumItalic-latin.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic */
-@font-face {
-	font-family: 'Product Sans';
-	font-style: italic;
-	font-weight: 700;
-	src: local('Product Sans Bold Italic'), local('ProductSans-BoldItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-BoldItalic-cyrillic.woff2) format('woff2');
-	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin */
-@font-face {
-	font-family: 'Product Sans';
-	font-style: italic;
-	font-weight: 700;
-	src: local('Product Sans Bold Italic'), local('ProductSans-BoldItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-BoldItalic-latin.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* FONTS -> PRODUCT SANS -> 400 */
 
 /* cyrillic */
 @font-face {
@@ -15224,6 +15261,26 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* greek */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Product Sans Regular'), local('ProductSans-Regular'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-Regular-greek.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Product Sans Regular'), local('ProductSans-Regular'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-Regular-latinext.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* FONTS -> PRODUCT SANS -> 500 */
+
 /* cyrillic */
 @font-face {
 	font-family: 'Product Sans';
@@ -15242,6 +15299,26 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* greek */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Product Sans Medium'), local('ProductSans-Medium'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-Medium-greek.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Product Sans Medium'), local('ProductSans-Medium'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-Medium-latinext.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* FONTS -> PRODUCT SANS -> 700 */
+
 /* cyrillic */
 @font-face {
 	font-family: 'Product Sans';
@@ -15259,3 +15336,138 @@ body:active .animatorTop-2Y7x2r .menu-Sp6bN1:not(:active) {
 	src: local('Product Sans Bold'), local('ProductSans-Bold'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-Bold-latin.woff2) format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/* greek */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Product Sans Bold'), local('ProductSans-Bold'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-Bold-greek.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Product Sans Bold'), local('ProductSans-Bold'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-Bold-latinext.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* FONTS -> PRODUCT SANS -> ITALIC */
+
+/* FONTS -> PRODUCT SANS -> ITALIC -> 400 */
+
+/* cyrillic */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Product Sans Italic'), local('ProductSans-Italic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-RegularItalic-cyrillic.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Product Sans Italic'), local('ProductSans-Italic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-RegularItalic-latin.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Product Sans Italic'), local('ProductSans-Italic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-RegularItalic-greek.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Product Sans Italic'), local('ProductSans-Italic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-RegularItalic-latinext.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* FONTS -> PRODUCT SANS -> ITALIC -> 500 */
+
+/* cyrillic */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: local('Product Sans Medium Italic'), local('ProductSans-MediumItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-MediumItalic-cyrillic.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: local('Product Sans Medium Italic'), local('ProductSans-MediumItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-MediumItalic-latin.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: local('Product Sans Medium Italic'), local('ProductSans-MediumItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-MediumItalic-greek.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: local('Product Sans Medium Italic'), local('ProductSans-MediumItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-MediumItalic-latinext.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* FONTS -> PRODUCT SANS -> ITALIC -> 700 */
+
+/* cyrillic */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Product Sans Bold Italic'), local('ProductSans-BoldItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-BoldItalic-cyrillic.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Product Sans Bold Italic'), local('ProductSans-BoldItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-BoldItalic-latin.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Product Sans Bold Italic'), local('ProductSans-BoldItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-BoldItalic-greek.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Product Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Product Sans Bold Italic'), local('ProductSans-BoldItalic'), url(https://capnkitten.github.io/BetterDiscord/Material-Discord/files/fonts/ProductSans-BoldItalic-latinext.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
